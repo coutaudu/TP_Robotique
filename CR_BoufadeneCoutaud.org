@@ -73,7 +73,12 @@ TODO figure 11
 + Nous avons repris notre premier programme de manutention simple, cette fois avec la pince commandable.
 + Les actions de saisies et de relachement de l'objet transporté par le robot sont pris en compte par les appels de fonction FermerPince et OuvrirPince quand le robot est en position respectivement /PickUp/ et /Drop/.
 + La figure 12 montre notre programme en cours d'éxécution.
+TODO figure 12.
 
 * Programmation de tâches conditionelles
-
+** Adaptation de l'environnement
++ Nous ajoutons une zone de dépot (table1) dans la zone de travail de notre outil pince avec préhenseur.
++ Nous positionnons l'objet relativement à table1.
++ Puis nous vérifions que la position de l'objet sur la table est atteignable par le robot équipé de notre pince, voir figure 13.
+TODO figure 13.    
   
