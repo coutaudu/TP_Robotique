@@ -35,4 +35,45 @@ TODO figure5: Déroulé et éxécution du programme /Manutention/.
 TODO figure 6: Nouvelle pince /Servo_Hand/ installée sur le préhenseur du robot.
 + Nous avons testé la non-régression en applicant le premier programme /Manutention/ réalisé précedemment avec la nouvelle pince.
 
-** Programmation de la commande du préhenseur  
+** Programmation de la commande du préhenseur
+*** Lier la pinces aux E/S sorties du robot   
++ Nous avons parametré le comportement des 2 mors de la pièce afin de mettre en place commande d'ouverture et une commande de fermeture:
+  + ServoHandA1 Inputs (Actionne le mors 1 si la commande est reçue de la part du robot sur le bit DO[1]):
+    + Si (RobotController1.DigitalOutput[1])  { Position=-50}
+    + Si (!RobotController1.DigitalOutput[1]) { Position=0}  
+  + ServoHandA1 Outputs (donne l'état d'ouverte totale sur le bit DI[1] et l'état de fermeture totale sur DI[2]):
+    + Si (Position=0)  { RobotController1.DigitalInput[1]=Vrai} Sinon {RobotController1.DigitalInput[1]=Faux}
+    + Si (Position=-50){ RobotController1.DigitalInput[2]=Vrai} Sinon {RobotController1.DigitalInput[2]=Faux}
+  + ServoHandA2 Inputs (Actionne le mors 2 si la commande est reçue de la part du robot sur le bit DO[1],cad le meme bit sur le mors 1):
+    + Si (RobotController1.DigitalOutput[1])  { Position=50}
+    + Si (!RobotController1.DigitalOutput[1]) { Position=0}  
+  + ServoHandA2 Outputs (donne les états d'ouverte totale et de fermeture totale sur les bits DI[3] et DI[4], cela permet de prendre en charge des temps de mouvement differents pour les 2 mors notamment):
+    + Si (Position=0)  { RobotController1.DigitalInput[3]=Vrai} Sinon {RobotController1.DigitalInput[3]=Faux}
+    + Si (Position=-50){ RobotController1.DigitalInput[4]=Vrai} Sinon {RobotController1.DigitalInput[4]=Faux}
+Les figures 7 et 8 montre le parametrage du mouvement de la pince.
+TODO figure 7 et 8.
+
+*** Programmer l'ouverture et la fermeture de la pince
+**** Programme /OuvrePince/
++ Il constiste à mettre le bit DO[1] à faux pour déclencher l'ouverture des deux mors, puis attendre que les deux mors notifient l'ouverture complète par leur bits respectifs DI[1] et DI[3], voir figure 9.
++ Ce programme servira ensuite de sous-programme dans des programme plus élaborés.     
+TODO figure 9
+
+**** Programme /FermePince/
++ Il constiste à mettre le bit DO[1] à vrai pour déclencher la fermeture des deux mors, puis attendre que les deux mors notifient la fermeture complète par leur bits respectifs DI[2] et DI[4], voir figure 10.
++ Ce programme servira ensuite de sous-programme dans des programme plus élaborés.     
+TODO figure 10
+
+**** Programme de test BoucleOuvreEtFermePince
++ Pour tester le bon fonctionnement de la pince ainsi que le mécanisme d'appel de foncition nous avons implémenté un programme qui ouvre puis ferme la pince ad vitam eternam.
++ Le programme est présenté en figure 11.
+TODO figure 11
+
+**** Programme de picking avec pince commandable
++ Nous avons repris notre premier programme de manutention simple, cette fois avec la pince commandable.
++ Les actions de saisies et de relachement de l'objet transporté par le robot sont pris en compte par les appels de fonction FermerPince et OuvrirPince quand le robot est en position respectivement /PickUp/ et /Drop/.
++ La figure 12 montre notre programme en cours d'éxécution.
+
+* Programmation de tâches conditionelles
+
+  
