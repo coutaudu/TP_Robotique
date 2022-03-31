@@ -2,27 +2,42 @@
 #+AUTHOR:BOUFADENE Mehdi COUTAUD Ulysse
 #+DATE:<2022-03-30 Wed>
 # #+LATEX_HEADER:\usepackage[margin=0.7in]{geometry}
+
+
 #+LATEX: \newpage
+
+
+* Fichiers sources
+Sources disponibles sur [[https://github.com/coutaudu/TP_Robotique/tree/master]].
 
 * Prise en main et première simulation de picking
 ** Mise en place d'une scène basique
 + Nous avons mis en place une scène basique pour un premier scénario de simulation d'un robot.
-TODO Figure 1.
++ Voir figure1.
+#+CAPTION: \\
+[[./figures/1_DeploimentPickingSimple.png]]
+
 + Le robot placé au centre est équipé d'une pince non-commandable.
 + Le robot est entouré par 2 plateaux qui seront les zones de prise et de dépose des objets.
 + Nous avons positionné le repère UTool de la pince installé sur le robot en extrémité de ces pinces.
-+ Les zones de dépot sont bien dans la zone de travail du robot équipé de cette pince et vis à vis du point de repère Utool de cette pince.
-TODO figure 2.           
++ Les zones de dépot sont bien dans la zone de travail du robot équipé de cette pince et vis à vis du point de repère Utool de cette pince, voir fig.2.
+#+CAPTION: \\
+[[./figures/2_Pince1UtoolArea.png]]
+
 + Nous avons positionné 2 boites sur les plateaux et avons paramétré leur orientation de manière à ce que le robot puisse se positionner pour les attraper par le haut.
-TODO figure 3: le robot en position d'interaction avec la boite sur le plateau 1
-TODO figure 4: le robot en position d'interaction avec la boite sur le plateau 2
+#+CAPTION: Le robot en position d'interaction avec la boite sur le plateau 1.
+[[./figures/3_RobotInterActionBoitePlateau1.png]]
+#+CAPTION: Le robot en position d'interaction avec la boite sur le plateau 2.
+[[./figures/4_RobotInterActionBoitePlateau2.png]]
+
 
 ** Programme et simulation d'un programme de picking simple
 + Nous avons implémenté un programme /Manutention/ sur ce robot qui réalise une tâche de picking simple, càd le robot va prendre la boite sur le /plateau1/ et aller la déposer sur le /plateau2/.
 + Pour les mouvements principaux ("longue distance") nous utilisons des mouvement de type /[J]/ qui laissent libre choix au robot de ses mouvements afin de passer d'une position à la suivante car cela est plus rapide pour le robot.
 + Pour les mouvements en phase d'approche, càd le dernier mouvement de descente pour saisir la boite, nous utilisons des mouvements de type /[L]/ qui forcent le robot à réaliser des mouvement rectilignes.
 + La figure 5 montre le déroulé et l'éxécution de notre programme /Manutention/.
-TODO figure5: Déroulé et éxécution du programme /Manutention/.
+#+CAPTION: Déroulé et exécution du programme /Manutention/.
+[[./figures/5_ProgrammeManutention.png]]
 
 * Ajout d'un effecteur
 ** Mise en place d'un outil de préhension
@@ -32,7 +47,9 @@ TODO figure5: Déroulé et éxécution du programme /Manutention/.
   + mettre à l'échelle pour être coérent avec le reste de notre déployement, cad la taille des boites,
   + parametrer le repère Utool de la nouvelle pince pour que cela corresponde à la nouvelle pince.
 + La figure 6 montre la nouvelle pince commandable installée.
-TODO figure 6: Nouvelle pince /Servo_Hand/ installée sur le préhenseur du robot.
+#+CAPTION: Nouvelle pince /Servo_Hand/ installée sur le préhenseur du robot.
+[[./figures/6_ServoHand.png]]
+
 + Nous avons testé la non-régression en applicant le premier programme /Manutention/ réalisé précedemment avec la nouvelle pince.
 
 ** Programmation de la commande du préhenseur
@@ -50,37 +67,45 @@ TODO figure 6: Nouvelle pince /Servo_Hand/ installée sur le préhenseur du robo
   + ServoHandA2 Outputs (donne les états d'ouverte totale et de fermeture totale sur les bits DI[3] et DI[4], cela permet de prendre en charge des temps de mouvement differents pour les 2 mors notamment):
     + Si (Position=0)  { RobotController1.DigitalInput[3]=Vrai} Sinon {RobotController1.DigitalInput[3]=Faux}
     + Si (Position=-50){ RobotController1.DigitalInput[4]=Vrai} Sinon {RobotController1.DigitalInput[4]=Faux}
-Les figures 7 et 8 montre le parametrage du mouvement de la pince.
-TODO figure 7 et 8.
++ Les figures 7 et 8 montre le parametrage du mouvement de la pince.
+#+CAPTION: Paramêtrage de la pince commandable, morsA1.
+[[./figures/7_MotionServoHandA1.png]]
+#+CAPTION: Paramêtrage de la pince commandable, morsA2.
+[[./figures/8_MotionServoHandA2.png]]
 
 *** Programmer l'ouverture et la fermeture de la pince
 **** Programme /OuvrePince/
 + Il constiste à mettre le bit DO[1] à faux pour déclencher l'ouverture des deux mors, puis attendre que les deux mors notifient l'ouverture complète par leur bits respectifs DI[1] et DI[3], voir figure 9.
 + Ce programme servira ensuite de sous-programme dans des programme plus élaborés.     
-TODO figure 9
+#+CAPTION: Programme d'ouverture de la pince.
+[[./figures/9_OuvrePince.png]]
 
 **** Programme /FermePince/
 + Il constiste à mettre le bit DO[1] à vrai pour déclencher la fermeture des deux mors, puis attendre que les deux mors notifient la fermeture complète par leur bits respectifs DI[2] et DI[4], voir figure 10.
 + Ce programme servira ensuite de sous-programme dans des programme plus élaborés.     
-TODO figure 10
+#+CAPTION: Programme de fermeture de la pince.
+[[./figures/10_FermePince.png]]
 
 **** Programme de test BoucleOuvreEtFermePince
 + Pour tester le bon fonctionnement de la pince ainsi que le mécanisme d'appel de foncition nous avons implémenté un programme qui ouvre puis ferme la pince ad vitam eternam.
 + Le programme est présenté en figure 11.
-TODO figure 11
+#+CAPTION: Programme de test d'ouverture/fermeture de la pince en boucle.
+[[./figures/11_PrgBoucleOuvreEtFerme.png]]
 
 **** Programme de picking avec pince commandable
 + Nous avons repris notre premier programme de manutention simple, cette fois avec la pince commandable.
 + Les actions de saisies et de relachement de l'objet transporté par le robot sont pris en compte par les appels de fonction FermerPince et OuvrirPince quand le robot est en position respectivement /PickUp/ et /Drop/.
 + La figure 12 montre notre programme en cours d'éxécution.
-TODO figure 12.
+#+CAPTION: Programme de manutention de boite avec pince commandable.
+[[./figures/12_PrgManutentionCommandePince.png]]
 
 * Programmation de tâches conditionelles
 ** Adaptation de l'environnement
 + Nous ajoutons une zone de dépot (table1) dans la zone de travail de notre outil pince avec préhenseur.
 + Nous positionnons l'objet relativement à table1.
 + Puis nous vérifions que la position de l'objet sur la table est atteignable par le robot équipé de notre pince, voir figure 13.
-TODO figure 13.
+#+CAPTION: Nouvel environnement avec Zone de dépot sur Table1 accessible. \\
+[[./figures/13_Table1PositionOK.png]]
 
 ** Implémentation des sous-programmes de picking
 + A partir de la base de programme de picking réalisé précédemment, nous avons implémenté 3 sous-programmes:
@@ -91,13 +116,16 @@ TODO figure 13.
   Ils partent de la même position: la position de saisie de la boite sur le plateau1 et reviennent dans la même position de repos.
   Le programme /ReposToSaisiePlateau1/ implémente la partie commune, c'est à dire le mouvement de la position de repos jusqu'à la saisie de la boite sur le plateau1.
   + La figure 14 montre le sous-programme /Plateau1toTable1/ en cours d'éxécution.
-TODO figure 14.
+#+CAPTION: Sous-programme de Drop du plateau1 vers la table 1.
+[[./figures/14-PrgPlateau1toTable1.png]]
 
 ** Implémentation du programme de manutention conditionelle
 + Avec nos sous-programmes fonctionnels, il nous suffit maintenant d'agencer l'appel des differentes fonctions dans une bloc /if then else/ et de câbler le test de la condition sur un bit du robot.
 + Le bloc /if then else/ est implémenté via des /IF ... JMP LBL[...]/, càd des /goto/ en programmation impérative.
 + La condition est câblée sur le bit DI[5] que nous contrôlons manuellement vie l'interface /IO/Panel/  
 + La figure 15 montre notre programme de manutention conditionnelle en cours d'éxécution.
+#+CAPTION: Programme de manutention de boite conditionnelle: L'activation du bit DI[5] change la destination de dépot. 
+[[./figures/15-PrgManutentionConditionnelle.png]]
 
 * Programmation d'un second robot et coordination avec le premier
 + Nous avons ajouté un robot et adapté l'environnement afin de réaliser une tache supplémentaire:
@@ -113,11 +141,12 @@ TODO figure 14.
     + Robot2 libère son /Lock/ en sortant de la zone de Table1 (cad juste après sont mouvement déloignement)       
   + *ROBOT1:*              
     + Après un dépot sur la /Table1/, une opération est ajoutée:
-      + /GoToSafePlace/ qui consiste a:
-	+ se positionner éloigné de /Table1/
-	+ Libérer le /Lock/ en passant Robot1.DO[2]->Robot2.DI[2] à Vrai.
-	+ Attendre que Robot2 libère son /Lock/ en passant Robot2.DO[1]->Robot1.DI[6] à Vrai.
-	+ Reposer un /Lock/ en passant Robot1.DO[2]->Robot2.DI[2] à Faux.
+      /GoToSafePlace/ qui consiste a:
+      + se positionner éloigné de /Table1/
+      + Libérer le /Lock/ en passant Robot1.DO[2]->Robot2.DI[2] à Vrai.
+      + Attendre que Robot2 libère son /Lock/ en passant Robot2.DO[1]->Robot1.DI[6] à Vrai.
+      + Reposer un /Lock/ en passant Robot1.DO[2]->Robot2.DI[2] à Faux.
 	
 + La figure 16 montre notre système de deux robots coordonnés en cours de simulation.
-TODO Figure 16
+#+CAPTION:Simulation d'une chaine de manutention comprenant 2 robots avec une coordination entre eux pour prévenir des risques de collision.
+[[./figures/16-DoubleRobotCoordo.png]]
