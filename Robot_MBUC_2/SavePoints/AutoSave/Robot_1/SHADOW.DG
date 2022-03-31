@@ -1,0 +1,933 @@
+
+Variable Change Summary:
+Catalog records in use 686  of 3000
+Shadow in use 347996  of 6447554
+[*SYSTEM*] saved 13 times with 672 entries:
+[    *SYSTEM*]        $SCR  1 updates 
+1 occurances
+[    *SYSTEM*]        $MCR  108 updates 
+2 occurances
+[    *SYSTEM*]      $CPDBG  1038 updates 
+1 occurances
+[    *SYSTEM*] $FILE_DGBCK  7 updates 
+7 occurances
+[    *SYSTEM*]    $FMS_GRP  47147 updates 
+25 occurances
+[    *SYSTEM*]    $MCR_GRP  59 updates 
+1 occurances
+[    *SYSTEM*]$SMON_RECALL  4338 updates 
+512 occurances
+[    *SYSTEM*] $MNUTOOLNUM  53 updates 
+1 occurances
+[    *SYSTEM*]   $CELL_GRP  1 updates 
+1 occurances
+[    *SYSTEM*]    $MNUTOOL  129 updates 
+4 occurances
+[    *SYSTEM*]        $MCR  108 updates 
+2 occurances
+[    *SYSTEM*]      $CPDBG  1038 updates 
+4 occurances
+[    *SYSTEM*]    $MCR_GRP  59 updates 
+2 occurances
+[    *SYSTEM*]   $RDCR_GRP  459 updates 
+10 occurances
+[    *SYSTEM*]    $MNUTOOL  129 updates 
+2 occurances
+[    *SYSTEM*]   $DMSW_CFG  10 updates 
+1 occurances
+[    *SYSTEM*]      $CPDBG  1038 updates 
+3 occurances
+[    *SYSTEM*]   $DIAG_GRP  788 updates 
+14 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+2 occurances
+[    *SYSTEM*] $MOR_GRP_SV  188 updates 
+1 occurances
+[    *SYSTEM*]    $SCR_GRP  156 updates 
+2 occurances
+[    *SYSTEM*]  $CP_MORGRP  64 updates 
+1 occurances
+[    *SYSTEM*]        $MCR  108 updates 
+1 occurances
+[    *SYSTEM*]      $CPDBG  1038 updates 
+1 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+2 occurances
+[    *SYSTEM*]    $FMS_GRP  47147 updates 
+1 occurances
+[    *SYSTEM*] $MOR_GRP_SV  188 updates 
+1 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+1 occurances
+[    *SYSTEM*]      $CPDBG  1038 updates 
+1 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+1 occurances
+[    *SYSTEM*]    $MNUTOOL  129 updates 
+3 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+2 occurances
+[    *SYSTEM*]    $FMS_GRP  47147 updates 
+1 occurances
+[    *SYSTEM*] $MOR_GRP_SV  188 updates 
+1 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+1 occurances
+[    *SYSTEM*]  $CP_MORGRP  64 updates 
+1 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+8 occurances
+[    *SYSTEM*]    $FMS_GRP  47147 updates 
+1 occurances
+[    *SYSTEM*] $MOR_GRP_SV  188 updates 
+3 occurances
+[    *SYSTEM*]    $SCR_GRP  156 updates 
+1 occurances
+[    *SYSTEM*]    $FMS_GRP  47147 updates 
+3 occurances
+[    *SYSTEM*]    $MNUTOOL  129 updates 
+3 occurances
+[    *SYSTEM*]    $DMR_GRP  411 updates 
+1 occurances
+[    *SYSTEM*]     $DTDIAG  4 updates 
+1 occurances
+[    *SYSTEM*]$SMON_RECALL  4338 updates 
+8 occurances
+[    *SYSTEM*]        $MCR  108 updates 
+2 occurances
+[    *SYSTEM*]  $CP_MORGRP  64 updates 
+3 occurances
+[    *SYSTEM*]  $HOSTC_CFG  24 updates 
+4 occurances
+[    *SYSTEM*]$SMON_RECALL  4338 updates 
+10 occurances
+[    *SYSTEM*]  $CP_MORGRP  64 updates 
+1 occurances
+[    *SYSTEM*]$SMON_RECALL  4338 updates 
+6 occurances
+[TPFDEF] saved 3 times with 14 entries:
+[      TPFDEF]  SETUP_DATA  14 updates 
+14 occurances
+
+Detailed Change Listing:
+Catalog records in use 686  of 3000
+Shadow in use 347996  of 6447554
+[*SYSTEM*] saved 13 times with 672 entries:
+[    *SYSTEM*]        $SCR  1 updates               $SCR.$PREV_CTRL,65,118,0x0
+[    *SYSTEM*]        $MCR  108 updates               $MCR.$GENOVERRIDE,44,38,0x64
+              $MCR.$MJOG_DEBUG,44,41,0x10000000
+[    *SYSTEM*]      $CPDBG  1038 updates               $CPDBG.$MGDEBUG.$COUNT,9,88,0x1ED
+[    *SYSTEM*] $FILE_DGBCK  7 updates               $FILE_DGBCK[6].$FUNC_PTR,32,198,0x2DB0109B
+              $FILE_DGBCK[7].$FUNC_PTR,32,231,0x29103D74
+              $FILE_DGBCK[9].$FUNC_PTR,32,297,0x313022FF
+              $FILE_DGBCK[10].$FUNC_PTR,32,330,0x313022FF
+              $FILE_DGBCK[11].$FUNC_PTR,32,363,0x31302193
+              $FILE_DGBCK[12].$FUNC_PTR,32,396,0x31302193
+              $FILE_DGBCK[13].$FUNC_PTR,32,429,0x31302193
+[    *SYSTEM*]    $FMS_GRP  47147 updates               $FMS_GRP[1].$REM_LIFE[1],35,2,0x4A3688B9
+              $FMS_GRP[1].$REM_LIFE[2],35,3,0x4B20DE9D
+              $FMS_GRP[1].$REM_LIFE[3],35,4,0x4A65F8C6
+              $FMS_GRP[1].$REM_LIFE[4],35,5,0x4E6DC8DB
+              $FMS_GRP[1].$REM_LIFE[5],35,6,0x4DCDB555
+              $FMS_GRP[1].$REM_LIFE[6],35,7,0x4D8693FE
+              $FMS_GRP[1].$T_LIFE[1],35,22,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE[2],35,23,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE[3],35,24,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE[4],35,25,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE[5],35,26,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE[6],35,27,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE_TEMP[1],35,62,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE_TEMP[2],35,63,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE_TEMP[3],35,64,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE_TEMP[4],35,65,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE_TEMP[5],35,66,0x410DCFB1
+              $FMS_GRP[1].$T_LIFE_TEMP[6],35,67,0x410DCFB1
+              $FMS_GRP[1].$REM_LIFE_0[1],35,72,0x4A3688B9
+              $FMS_GRP[1].$REM_LIFE_0[2],35,73,0x4B20DE9D
+              $FMS_GRP[1].$REM_LIFE_0[3],35,74,0x4A65F8C6
+              $FMS_GRP[1].$REM_LIFE_0[4],35,75,0x4E6DC8DB
+              $FMS_GRP[1].$REM_LIFE_0[5],35,76,0x4DCDB555
+              $FMS_GRP[1].$REM_LIFE_0[6],35,77,0x4D8693FE
+              $FMS_GRP[1].$DTY_END_T,35,146,0x5470829C
+[    *SYSTEM*]    $MCR_GRP  59 updates               $MCR_GRP[1].$RSM_ORIENT,45,92,0x3
+[    *SYSTEM*]$SMON_RECALL  4338 updates               $SMON_RECALL[1],71,1,0x7978187D
+              $SMON_RECALL[1],71,2,0x7461727A
+              $SMON_RECALL[1],71,3,0x31362065
+              $SMON_RECALL[1],71,4,0x6F703E3D
+              $SMON_RECALL[1],71,5,0x63757472
+              $SMON_RECALL[1],71,6,0x3734313A
+              $SMON_RECALL[1],71,7,0x61003836
+              $SMON_RECALL[1],71,8,0x2A5C6B63
+              $SMON_RECALL[1],71,9,0x3E3D2A2E
+              $SMON_RECALL[1],71,10,0x74726F70
+              $SMON_RECALL[1],71,11,0x313A6375
+              $SMON_RECALL[1],71,12,0x38363734
+              $SMON_RECALL[1],71,13,0x38363700
+              $SMON_RECALL[2],71,33,0x6F63327D
+              $SMON_RECALL[2],71,36,0x72656472
+              $SMON_RECALL[2],71,37,0x2E6C6966
+              $SMON_RECALL[2],71,38,0x20746164
+              $SMON_RECALL[2],71,39,0x74726976
+              $SMON_RECALL[2],71,40,0x6D745C3A
+              $SMON_RECALL[2],71,41,0x63616270
+              $SMON_RECALL[2],71,42,0x3E3D5C6B
+              $SMON_RECALL[2],71,43,0x74726F70
+              $SMON_RECALL[2],71,44,0x313A6375
+              $SMON_RECALL[2],71,45,0x38363734
+              $SMON_RECALL[3],71,65,0x6F63297D
+              $SMON_RECALL[3],71,66,0x6D207970
+              $SMON_RECALL[3],71,67,0x2A3A6264
+              $SMON_RECALL[3],71,68,0x76202A2E
+              $SMON_RECALL[3],71,69,0x3A747269
+              $SMON_RECALL[3],71,70,0x706D745C
+              $SMON_RECALL[3],71,71,0x6B636162
+              $SMON_RECALL[3],71,72,0x703E3D5C
+              $SMON_RECALL[3],71,73,0x7574726F
+              $SMON_RECALL[3],71,74,0x34313A63
+              $SMON_RECALL[3],71,75,0x383637
+              $SMON_RECALL[3],71,76,0x313A6375
+              $SMON_RECALL[3],71,77,0x38363734
+              $SMON_RECALL[4],71,97,0x6F632F7D
+              $SMON_RECALL[4],71,98,0x66207970
+              $SMON_RECALL[4],71,99,0x6F3A7372
+              $SMON_RECALL[4],71,100,0x72656472
+              $SMON_RECALL[4],71,101,0x2E6C6966
+              $SMON_RECALL[4],71,102,0x20746164
+              $SMON_RECALL[4],71,103,0x74726976
+              $SMON_RECALL[4],71,104,0x65745C3A
+              $SMON_RECALL[4],71,105,0x3D5C706D
+              $SMON_RECALL[4],71,106,0x726F703E
+              $SMON_RECALL[4],71,107,0x3A637574
+              $SMON_RECALL[4],71,108,0x33353731
+              $SMON_RECALL[4],71,109,0x38360032
+              $SMON_RECALL[5],71,129,0x6F63277D
+              $SMON_RECALL[5],71,131,0x2A3A7372
+              $SMON_RECALL[5],71,132,0x2074642E
+              $SMON_RECALL[5],71,133,0x74726976
+              $SMON_RECALL[5],71,134,0x65745C3A
+              $SMON_RECALL[5],71,135,0x3D5C706D
+              $SMON_RECALL[5],71,136,0x726F703E
+              $SMON_RECALL[5],71,137,0x3A637574
+              $SMON_RECALL[5],71,138,0x33353731
+              $SMON_RECALL[5],71,139,0x3A630032
+              $SMON_RECALL[5],71,140,0x33353731
+              $SMON_RECALL[5],71,141,0x38360032
+              $SMON_RECALL[6],71,161,0x79780A7D
+              $SMON_RECALL[6],71,162,0x7461727A
+              $SMON_RECALL[6],71,163,0x31362065
+              $SMON_RECALL[6],71,164,0x20746400
+              $SMON_RECALL[6],71,165,0x74726976
+              $SMON_RECALL[6],71,166,0x65745C3A
+              $SMON_RECALL[6],71,167,0x3D5C706D
+              $SMON_RECALL[6],71,168,0x726F703E
+              $SMON_RECALL[6],71,169,0x3A637574
+              $SMON_RECALL[6],71,170,0x33353731
+              $SMON_RECALL[6],71,171,0x3A630032
+              $SMON_RECALL[6],71,172,0x33353731
+              $SMON_RECALL[6],71,173,0x38360032
+              $SMON_RECALL[7],71,193,0x7978187D
+              $SMON_RECALL[7],71,194,0x7461727A
+              $SMON_RECALL[7],71,195,0x31362065
+              $SMON_RECALL[7],71,196,0x6F703E3D
+              $SMON_RECALL[7],71,197,0x63757472
+              $SMON_RECALL[7],71,198,0x3537313A
+              $SMON_RECALL[7],71,199,0x3D003233
+              $SMON_RECALL[7],71,200,0x726F703E
+              $SMON_RECALL[7],71,201,0x3A637574
+              $SMON_RECALL[7],71,202,0x33353731
+              $SMON_RECALL[7],71,203,0x3A630032
+              $SMON_RECALL[7],71,204,0x33353731
+              $SMON_RECALL[7],71,205,0x38360032
+              $SMON_RECALL[8],71,225,0x6F63307D
+              $SMON_RECALL[8],71,226,0x6D207970
+              $SMON_RECALL[8],71,227,0x616D3A64
+              $SMON_RECALL[8],71,228,0x6574756E
+              $SMON_RECALL[8],71,229,0x6F69746E
+              $SMON_RECALL[8],71,230,0x70742E6E
+              $SMON_RECALL[8],71,231,0x72697620
+              $SMON_RECALL[8],71,232,0x745C3A74
+              $SMON_RECALL[8],71,233,0x5C706D65
+              $SMON_RECALL[8],71,234,0x6F703E3D
+              $SMON_RECALL[8],71,235,0x63757472
+              $SMON_RECALL[8],71,236,0x3537313A
+              $SMON_RECALL[8],71,237,0x38003233
+              $SMON_RECALL[9],71,257,0x6F63327D
+              $SMON_RECALL[9],71,258,0x66207970
+              $SMON_RECALL[9],71,259,0x6F3A7372
+              $SMON_RECALL[9],71,260,0x72656472
+              $SMON_RECALL[9],71,261,0x2E6C6966
+              $SMON_RECALL[9],71,262,0x20746164
+              $SMON_RECALL[9],71,263,0x74726976
+              $SMON_RECALL[9],71,264,0x6D745C3A
+              $SMON_RECALL[9],71,265,0x63616270
+              $SMON_RECALL[9],71,266,0x3E3D5C6B
+              $SMON_RECALL[9],71,267,0x74726F70
+              $SMON_RECALL[10],71,289,0x6F63297D
+              $SMON_RECALL[10],71,290,0x6D207970
+              $SMON_RECALL[10],71,291,0x2A3A6264
+              $SMON_RECALL[10],71,292,0x76202A2E
+              $SMON_RECALL[10],71,293,0x3A747269
+              $SMON_RECALL[10],71,294,0x706D745C
+              $SMON_RECALL[10],71,295,0x6B636162
+              $SMON_RECALL[10],71,296,0x703E3D5C
+              $SMON_RECALL[10],71,297,0x7574726F
+              $SMON_RECALL[10],71,298,0x37313A63
+              $SMON_RECALL[10],71,299,0x323335
+              $SMON_RECALL[10],71,300,0x313A6375
+              $SMON_RECALL[11],71,321,0x63782D7D
+              $SMON_RECALL[11],71,323,0x5C3A7266
+              $SMON_RECALL[11],71,324,0x202A2E2A
+              $SMON_RECALL[11],71,325,0x74726976
+              $SMON_RECALL[11],71,326,0x6D745C3A
+              $SMON_RECALL[11],71,327,0x63616270
+              $SMON_RECALL[11],71,328,0x2E2A5C6B
+              $SMON_RECALL[11],71,329,0x703E3D2A
+              $SMON_RECALL[11],71,330,0x7574726F
+              $SMON_RECALL[11],71,331,0x37313A63
+              $SMON_RECALL[11],71,332,0x323335
+              $SMON_RECALL[11],71,333,0x32333537
+              $SMON_RECALL[12],71,353,0x63782E7D
+              $SMON_RECALL[12],71,354,0x2079706F
+              $SMON_RECALL[12],71,355,0x3A617266
+              $SMON_RECALL[12],71,356,0x2A2E2A5C
+              $SMON_RECALL[12],71,357,0x72697620
+              $SMON_RECALL[12],71,358,0x745C3A74
+              $SMON_RECALL[12],71,359,0x6162706D
+              $SMON_RECALL[12],71,360,0x2A5C6B63
+              $SMON_RECALL[12],71,361,0x3E3D2A2E
+              $SMON_RECALL[12],71,362,0x74726F70
+              $SMON_RECALL[12],71,363,0x313A6375
+              $SMON_RECALL[12],71,364,0x32333537
+              $SMON_RECALL[12],71,365,0x32333500
+              $SMON_RECALL[13],71,385,0x6F63327D
+              $SMON_RECALL[13],71,386,0x66207970
+              $SMON_RECALL[13],71,387,0x6F3A7372
+              $SMON_RECALL[13],71,388,0x72656472
+              $SMON_RECALL[13],71,389,0x2E6C6966
+              $SMON_RECALL[13],71,390,0x20746164
+              $SMON_RECALL[13],71,391,0x74726976
+              $SMON_RECALL[13],71,392,0x6D745C3A
+              $SMON_RECALL[13],71,393,0x63616270
+              $SMON_RECALL[13],71,394,0x3E3D5C6B
+              $SMON_RECALL[13],71,395,0x74726F70
+              $SMON_RECALL[13],71,396,0x313A6375
+              $SMON_RECALL[13],71,397,0x32333537
+              $SMON_RECALL[14],71,417,0x6F63297D
+              $SMON_RECALL[14],71,418,0x6D207970
+              $SMON_RECALL[14],71,419,0x2A3A6264
+              $SMON_RECALL[14],71,420,0x76202A2E
+              $SMON_RECALL[14],71,421,0x3A747269
+              $SMON_RECALL[14],71,422,0x706D745C
+              $SMON_RECALL[14],71,423,0x6B636162
+              $SMON_RECALL[14],71,424,0x703E3D5C
+              $SMON_RECALL[14],71,425,0x7574726F
+              $SMON_RECALL[14],71,426,0x37313A63
+              $SMON_RECALL[14],71,427,0x323335
+              $SMON_RECALL[15],71,449,0x6F632F7D
+              $SMON_RECALL[15],71,450,0x66207970
+              $SMON_RECALL[15],71,451,0x6F3A7372
+              $SMON_RECALL[15],71,452,0x72656472
+              $SMON_RECALL[15],71,453,0x2E6C6966
+              $SMON_RECALL[15],71,454,0x20746164
+              $SMON_RECALL[15],71,455,0x74726976
+              $SMON_RECALL[15],71,456,0x65745C3A
+              $SMON_RECALL[15],71,457,0x3D5C706D
+              $SMON_RECALL[15],71,458,0x726F703E
+              $SMON_RECALL[15],71,459,0x3A637574
+              $SMON_RECALL[15],71,460,0x30373831
+              $SMON_RECALL[16],71,481,0x6F63277D
+              $SMON_RECALL[16],71,483,0x2A3A7372
+              $SMON_RECALL[16],71,484,0x2074642E
+              $SMON_RECALL[16],71,485,0x74726976
+              $SMON_RECALL[16],71,486,0x65745C3A
+              $SMON_RECALL[16],71,487,0x3D5C706D
+              $SMON_RECALL[16],71,488,0x726F703E
+              $SMON_RECALL[16],71,489,0x3A637574
+              $SMON_RECALL[16],71,490,0x30373831
+              $SMON_RECALL[16],71,491,0x3A630030
+              $SMON_RECALL[16],71,492,0x30373831
+              $SMON_RECALL[16],71,493,0x32330030
+              $SMON_RECALL[17],71,513,0x79780A7D
+              $SMON_RECALL[17],71,514,0x7461727A
+              $SMON_RECALL[17],71,515,0x31362065
+              $SMON_RECALL[17],71,516,0x20746400
+              $SMON_RECALL[17],71,517,0x74726976
+              $SMON_RECALL[17],71,518,0x65745C3A
+              $SMON_RECALL[17],71,519,0x3D5C706D
+              $SMON_RECALL[17],71,520,0x726F703E
+              $SMON_RECALL[17],71,521,0x3A637574
+              $SMON_RECALL[17],71,522,0x30373831
+              $SMON_RECALL[17],71,523,0x3A630030
+              $SMON_RECALL[17],71,524,0x30373831
+              $SMON_RECALL[17],71,525,0x32330030
+              $SMON_RECALL[18],71,545,0x7978187D
+              $SMON_RECALL[18],71,546,0x7461727A
+              $SMON_RECALL[18],71,547,0x31362065
+              $SMON_RECALL[18],71,548,0x6F703E3D
+              $SMON_RECALL[18],71,549,0x63757472
+              $SMON_RECALL[18],71,550,0x3738313A
+              $SMON_RECALL[18],71,551,0x3D003030
+              $SMON_RECALL[18],71,552,0x726F703E
+              $SMON_RECALL[18],71,553,0x3A637574
+              $SMON_RECALL[18],71,554,0x30373831
+              $SMON_RECALL[18],71,555,0x3A630030
+              $SMON_RECALL[18],71,556,0x30373831
+              $SMON_RECALL[18],71,557,0x32330030
+              $SMON_RECALL[19],71,577,0x6F63307D
+              $SMON_RECALL[19],71,578,0x6D207970
+              $SMON_RECALL[19],71,579,0x616D3A64
+              $SMON_RECALL[19],71,580,0x6574756E
+              $SMON_RECALL[19],71,581,0x6F69746E
+              $SMON_RECALL[19],71,582,0x70742E6E
+              $SMON_RECALL[19],71,583,0x72697620
+              $SMON_RECALL[19],71,584,0x745C3A74
+              $SMON_RECALL[19],71,585,0x5C706D65
+              $SMON_RECALL[19],71,586,0x6F703E3D
+              $SMON_RECALL[19],71,587,0x63757472
+              $SMON_RECALL[19],71,588,0x3738313A
+              $SMON_RECALL[19],71,589,0x32003030
+              $SMON_RECALL[20],71,609,0x6F63327D
+              $SMON_RECALL[20],71,610,0x66207970
+              $SMON_RECALL[20],71,611,0x6F3A7372
+              $SMON_RECALL[20],71,612,0x72656472
+              $SMON_RECALL[20],71,613,0x2E6C6966
+              $SMON_RECALL[20],71,614,0x20746164
+              $SMON_RECALL[20],71,615,0x74726976
+              $SMON_RECALL[20],71,616,0x6D745C3A
+              $SMON_RECALL[20],71,617,0x63616270
+              $SMON_RECALL[20],71,618,0x3E3D5C6B
+              $SMON_RECALL[20],71,619,0x74726F70
+              $SMON_RECALL[20],71,620,0x313A6375
+              $SMON_RECALL[20],71,621,0x30303738
+              $SMON_RECALL[21],71,641,0x6F63297D
+              $SMON_RECALL[21],71,642,0x6D207970
+              $SMON_RECALL[21],71,643,0x2A3A6264
+              $SMON_RECALL[21],71,644,0x76202A2E
+              $SMON_RECALL[21],71,645,0x3A747269
+              $SMON_RECALL[21],71,646,0x706D745C
+              $SMON_RECALL[21],71,647,0x6B636162
+              $SMON_RECALL[24],71,737,0x6F63327D
+              $SMON_RECALL[24],71,738,0x66207970
+              $SMON_RECALL[24],71,739,0x6F3A7372
+              $SMON_RECALL[24],71,740,0x72656472
+              $SMON_RECALL[24],71,741,0x2E6C6966
+              $SMON_RECALL[24],71,742,0x20746164
+              $SMON_RECALL[24],71,743,0x74726976
+              $SMON_RECALL[24],71,744,0x6D745C3A
+              $SMON_RECALL[24],71,745,0x63616270
+              $SMON_RECALL[24],71,746,0x3E3D5C6B
+              $SMON_RECALL[24],71,747,0x74726F70
+              $SMON_RECALL[24],71,748,0x313A6375
+              $SMON_RECALL[24],71,749,0x30303738
+              $SMON_RECALL[25],71,769,0x6F63297D
+              $SMON_RECALL[25],71,770,0x6D207970
+              $SMON_RECALL[25],71,771,0x2A3A6264
+              $SMON_RECALL[25],71,772,0x76202A2E
+              $SMON_RECALL[25],71,773,0x3A747269
+              $SMON_RECALL[25],71,774,0x706D745C
+              $SMON_RECALL[25],71,775,0x6B636162
+              $SMON_RECALL[25],71,776,0x703E3D5C
+              $SMON_RECALL[25],71,777,0x7574726F
+              $SMON_RECALL[25],71,778,0x38313A63
+              $SMON_RECALL[25],71,779,0x303037
+              $SMON_RECALL[25],71,780,0x313A6375
+              $SMON_RECALL[25],71,781,0x30303738
+              $SMON_RECALL[26],71,801,0x63782D7D
+              $SMON_RECALL[26],71,802,0x2079706F
+              $SMON_RECALL[26],71,803,0x5C3A7266
+              $SMON_RECALL[26],71,804,0x202A2E2A
+              $SMON_RECALL[26],71,805,0x74726976
+              $SMON_RECALL[26],71,806,0x6D745C3A
+              $SMON_RECALL[26],71,807,0x63616270
+              $SMON_RECALL[26],71,808,0x2E2A5C6B
+              $SMON_RECALL[26],71,809,0x703E3D2A
+              $SMON_RECALL[26],71,810,0x7574726F
+              $SMON_RECALL[26],71,811,0x38313A63
+              $SMON_RECALL[26],71,812,0x303037
+              $SMON_RECALL[26],71,813,0x30303738
+              $SMON_RECALL[27],71,833,0x63782E7D
+              $SMON_RECALL[27],71,834,0x2079706F
+              $SMON_RECALL[27],71,835,0x3A617266
+              $SMON_RECALL[27],71,836,0x2A2E2A5C
+              $SMON_RECALL[27],71,837,0x72697620
+              $SMON_RECALL[27],71,838,0x745C3A74
+              $SMON_RECALL[27],71,839,0x6162706D
+              $SMON_RECALL[27],71,840,0x2A5C6B63
+              $SMON_RECALL[27],71,841,0x3E3D2A2E
+              $SMON_RECALL[27],71,842,0x74726F70
+              $SMON_RECALL[27],71,843,0x313A6375
+              $SMON_RECALL[27],71,844,0x30303738
+              $SMON_RECALL[27],71,845,0x30303700
+              $SMON_RECALL[28],71,865,0x6F63327D
+              $SMON_RECALL[28],71,866,0x66207970
+              $SMON_RECALL[28],71,867,0x6F3A7372
+              $SMON_RECALL[28],71,868,0x72656472
+              $SMON_RECALL[28],71,869,0x2E6C6966
+              $SMON_RECALL[28],71,870,0x20746164
+              $SMON_RECALL[28],71,871,0x74726976
+              $SMON_RECALL[28],71,872,0x6D745C3A
+              $SMON_RECALL[28],71,873,0x63616270
+              $SMON_RECALL[28],71,874,0x3E3D5C6B
+              $SMON_RECALL[28],71,875,0x74726F70
+              $SMON_RECALL[28],71,876,0x313A6375
+              $SMON_RECALL[28],71,877,0x30303738
+              $SMON_RECALL[29],71,897,0x6F63297D
+              $SMON_RECALL[29],71,898,0x6D207970
+              $SMON_RECALL[29],71,899,0x2A3A6264
+              $SMON_RECALL[29],71,900,0x76202A2E
+              $SMON_RECALL[29],71,901,0x3A747269
+              $SMON_RECALL[29],71,902,0x706D745C
+              $SMON_RECALL[29],71,903,0x6B636162
+              $SMON_RECALL[29],71,904,0x703E3D5C
+              $SMON_RECALL[29],71,905,0x7574726F
+              $SMON_RECALL[29],71,906,0x38313A63
+              $SMON_RECALL[29],71,907,0x303037
+              $SMON_RECALL[29],71,908,0x313A6375
+              $SMON_RECALL[29],71,909,0x30303738
+              $SMON_RECALL[30],71,929,0x63782D7D
+              $SMON_RECALL[30],71,930,0x2079706F
+              $SMON_RECALL[30],71,931,0x5C3A7266
+              $SMON_RECALL[30],71,932,0x202A2E2A
+              $SMON_RECALL[30],71,933,0x74726976
+              $SMON_RECALL[30],71,934,0x6D745C3A
+              $SMON_RECALL[30],71,935,0x63616270
+              $SMON_RECALL[30],71,936,0x2E2A5C6B
+              $SMON_RECALL[30],71,937,0x703E3D2A
+              $SMON_RECALL[30],71,938,0x7574726F
+              $SMON_RECALL[30],71,939,0x38313A63
+              $SMON_RECALL[30],71,940,0x303037
+              $SMON_RECALL[30],71,941,0x30303738
+              $SMON_RECALL[31],71,961,0x63782E7D
+              $SMON_RECALL[31],71,963,0x3A617266
+              $SMON_RECALL[31],71,964,0x2A2E2A5C
+              $SMON_RECALL[31],71,965,0x72697620
+              $SMON_RECALL[31],71,966,0x745C3A74
+              $SMON_RECALL[31],71,967,0x6162706D
+              $SMON_RECALL[31],71,968,0x2A5C6B63
+              $SMON_RECALL[31],71,969,0x3E3D2A2E
+              $SMON_RECALL[31],71,970,0x74726F70
+              $SMON_RECALL[31],71,971,0x313A6375
+              $SMON_RECALL[31],71,972,0x30303738
+              $SMON_RECALL[31],71,973,0x30303700
+              $SMON_RECALL[32],71,993,0x7978187D
+              $SMON_RECALL[32],71,994,0x7461727A
+              $SMON_RECALL[32],71,995,0x31312065
+              $SMON_RECALL[32],71,996,0x6F703E3D
+              $SMON_RECALL[32],71,997,0x63757472
+              $SMON_RECALL[32],71,998,0x3738313A
+              $SMON_RECALL[32],71,999,0x61003030
+              $SMON_RECALL[32],71,1000,0x2A5C6B63
+              $SMON_RECALL[32],71,1001,0x3E3D2A2E
+              $SMON_RECALL[32],71,1002,0x74726F70
+              $SMON_RECALL[32],71,1003,0x313A6375
+              $SMON_RECALL[32],71,1004,0x30303738
+              $SMON_RECALL[32],71,1005,0x30303700
+              $SMON_RECALL[33],71,1025,0x6F63397D
+              $SMON_RECALL[33],71,1026,0x6D207970
+              $SMON_RECALL[33],71,1027,0x616D3A64
+              $SMON_RECALL[33],71,1028,0x6574756E
+              $SMON_RECALL[33],71,1029,0x6F69746E
+              $SMON_RECALL[33],71,1030,0x6E69706E
+              $SMON_RECALL[33],71,1031,0x75616563
+              $SMON_RECALL[33],71,1032,0x742E6F74
+              $SMON_RECALL[33],71,1033,0x69762070
+              $SMON_RECALL[33],71,1034,0x5C3A7472
+              $SMON_RECALL[33],71,1035,0x706D6574
+              $SMON_RECALL[33],71,1036,0x703E3D5C
+              $SMON_RECALL[33],71,1037,0x7574726F
+              $SMON_RECALL[34],71,1057,0x7978187D
+              $SMON_RECALL[34],71,1058,0x7461727A
+              $SMON_RECALL[34],71,1059,0x31362065
+              $SMON_RECALL[34],71,1060,0x6F703E3D
+              $SMON_RECALL[34],71,1061,0x63757472
+              $SMON_RECALL[34],71,1062,0x3738313A
+              $SMON_RECALL[34],71,1063,0x75003030
+              $SMON_RECALL[34],71,1064,0x742E6F74
+              $SMON_RECALL[34],71,1065,0x69762070
+              $SMON_RECALL[34],71,1066,0x5C3A7472
+              $SMON_RECALL[34],71,1067,0x706D6574
+              $SMON_RECALL[34],71,1068,0x703E3D5C
+              $SMON_RECALL[34],71,1069,0x7574726F
+              $SMON_RECALL[37],71,1153,0x6F63397D
+              $SMON_RECALL[37],71,1154,0x6D207970
+              $SMON_RECALL[37],71,1155,0x616D3A64
+              $SMON_RECALL[37],71,1156,0x6574756E
+              $SMON_RECALL[37],71,1157,0x6F69746E
+              $SMON_RECALL[37],71,1158,0x6E69706E
+              $SMON_RECALL[37],71,1159,0x75616563
+              $SMON_RECALL[37],71,1160,0x742E6F74
+              $SMON_RECALL[37],71,1161,0x69762070
+              $SMON_RECALL[37],71,1162,0x5C3A7472
+              $SMON_RECALL[37],71,1163,0x706D6574
+              $SMON_RECALL[37],71,1164,0x703E3D5C
+              $SMON_RECALL[37],71,1165,0x7574726F
+              $SMON_RECALL[38],71,1185,0x7978187D
+              $SMON_RECALL[38],71,1186,0x7461727A
+              $SMON_RECALL[38],71,1187,0x31362065
+              $SMON_RECALL[38],71,1188,0x6F703E3D
+              $SMON_RECALL[38],71,1189,0x63757472
+              $SMON_RECALL[38],71,1190,0x3738313A
+              $SMON_RECALL[38],71,1191,0x75003030
+              $SMON_RECALL[38],71,1192,0x742E6F74
+              $SMON_RECALL[38],71,1193,0x69762070
+              $SMON_RECALL[38],71,1194,0x5C3A7472
+              $SMON_RECALL[38],71,1195,0x706D6574
+              $SMON_RECALL[38],71,1196,0x703E3D5C
+              $SMON_RECALL[38],71,1197,0x7574726F
+              $SMON_RECALL[39],71,1217,0x7978187D
+              $SMON_RECALL[39],71,1218,0x7461727A
+              $SMON_RECALL[39],71,1219,0x31312065
+              $SMON_RECALL[39],71,1220,0x6F703E3D
+              $SMON_RECALL[39],71,1221,0x63757472
+              $SMON_RECALL[39],71,1222,0x3738313A
+              $SMON_RECALL[39],71,1223,0x75003030
+              $SMON_RECALL[39],71,1224,0x742E6F74
+              $SMON_RECALL[39],71,1225,0x69762070
+              $SMON_RECALL[39],71,1226,0x5C3A7472
+              $SMON_RECALL[39],71,1227,0x706D6574
+              $SMON_RECALL[39],71,1228,0x703E3D5C
+              $SMON_RECALL[39],71,1229,0x7574726F
+              $SMON_RECALL[40],71,1249,0x7978187D
+              $SMON_RECALL[40],71,1250,0x7461727A
+              $SMON_RECALL[40],71,1251,0x31362065
+              $SMON_RECALL[40],71,1252,0x6F703E3D
+              $SMON_RECALL[40],71,1253,0x63757472
+              $SMON_RECALL[40],71,1254,0x3738313A
+              $SMON_RECALL[40],71,1255,0x75003030
+              $SMON_RECALL[40],71,1256,0x742E6F74
+              $SMON_RECALL[40],71,1257,0x69762070
+              $SMON_RECALL[40],71,1258,0x5C3A7472
+              $SMON_RECALL[40],71,1259,0x706D6574
+              $SMON_RECALL[40],71,1260,0x703E3D5C
+              $SMON_RECALL[40],71,1261,0x7574726F
+              $SMON_RECALL[2],71,34,0x66207970
+              $SMON_RECALL[2],71,35,0x6F3A7372
+              $SMON_RECALL[14],71,428,0x313A6375
+              $SMON_RECALL[14],71,429,0x32333537
+              $SMON_RECALL[15],71,461,0x32330030
+              $SMON_RECALL[16],71,482,0x66207970
+              $SMON_RECALL[21],71,648,0x703E3D5C
+              $SMON_RECALL[21],71,649,0x7574726F
+              $SMON_RECALL[21],71,650,0x38313A63
+              $SMON_RECALL[21],71,651,0x303037
+              $SMON_RECALL[21],71,652,0x313A6375
+              $SMON_RECALL[21],71,653,0x30303738
+              $SMON_RECALL[22],71,673,0x63782D7D
+              $SMON_RECALL[22],71,674,0x2079706F
+              $SMON_RECALL[22],71,675,0x5C3A7266
+              $SMON_RECALL[22],71,676,0x202A2E2A
+              $SMON_RECALL[22],71,677,0x74726976
+              $SMON_RECALL[22],71,678,0x6D745C3A
+              $SMON_RECALL[22],71,679,0x63616270
+              $SMON_RECALL[22],71,680,0x2E2A5C6B
+              $SMON_RECALL[22],71,681,0x703E3D2A
+              $SMON_RECALL[22],71,682,0x7574726F
+              $SMON_RECALL[22],71,683,0x38313A63
+              $SMON_RECALL[22],71,684,0x303037
+              $SMON_RECALL[22],71,685,0x30303738
+              $SMON_RECALL[23],71,705,0x63782E7D
+              $SMON_RECALL[23],71,708,0x2A2E2A5C
+              $SMON_RECALL[23],71,709,0x72697620
+              $SMON_RECALL[23],71,710,0x745C3A74
+              $SMON_RECALL[23],71,711,0x6162706D
+              $SMON_RECALL[23],71,712,0x2A5C6B63
+              $SMON_RECALL[23],71,713,0x3E3D2A2E
+              $SMON_RECALL[23],71,714,0x74726F70
+              $SMON_RECALL[23],71,715,0x313A6375
+              $SMON_RECALL[23],71,716,0x30303738
+              $SMON_RECALL[23],71,717,0x30303700
+              $SMON_RECALL[31],71,962,0x2079706F
+              $SMON_RECALL[35],71,1089,0x7978187D
+              $SMON_RECALL[35],71,1090,0x7461727A
+              $SMON_RECALL[35],71,1091,0x31312065
+              $SMON_RECALL[35],71,1092,0x6F703E3D
+              $SMON_RECALL[35],71,1093,0x63757472
+              $SMON_RECALL[35],71,1094,0x3738313A
+              $SMON_RECALL[35],71,1095,0x75003030
+              $SMON_RECALL[35],71,1096,0x742E6F74
+              $SMON_RECALL[35],71,1097,0x69762070
+              $SMON_RECALL[35],71,1098,0x5C3A7472
+              $SMON_RECALL[35],71,1099,0x706D6574
+              $SMON_RECALL[35],71,1100,0x703E3D5C
+              $SMON_RECALL[35],71,1101,0x7574726F
+              $SMON_RECALL[36],71,1121,0x6F63307D
+              $SMON_RECALL[36],71,1123,0x616D3A64
+              $SMON_RECALL[36],71,1124,0x6574756E
+              $SMON_RECALL[36],71,1125,0x6F69746E
+              $SMON_RECALL[36],71,1126,0x70742E6E
+              $SMON_RECALL[36],71,1127,0x72697620
+              $SMON_RECALL[36],71,1128,0x745C3A74
+              $SMON_RECALL[36],71,1129,0x5C706D65
+              $SMON_RECALL[36],71,1130,0x6F703E3D
+              $SMON_RECALL[36],71,1131,0x63757472
+              $SMON_RECALL[36],71,1132,0x3738313A
+              $SMON_RECALL[36],71,1133,0x75003030
+[    *SYSTEM*] $MNUTOOLNUM  53 updates               $MNUTOOLNUM[1],52,1,0xA2E7802
+[    *SYSTEM*]   $CELL_GRP  1 updates               $CELL_GRP[1].$CELL_FRAME,5,1,0x1138
+[    *SYSTEM*]    $MNUTOOL  129 updates               $MNUTOOL[1,2],51,19,0x80000000
+              $MNUTOOL[1,2],51,26,0xB6C67D0C
+              $MNUTOOL[1,2],51,27,0x39D2432A
+              $MNUTOOL[1,2],51,28,0x4356A550
+[    *SYSTEM*]        $MCR  108 updates               $MCR.$OTF_PRG_ID,44,42,0x110A
+              $MCR.$OTF_LIN_NO,44,43,0xA
+[    *SYSTEM*]      $CPDBG  1038 updates               $CPDBG.$CPIDEBUG.$COUNT,9,16,0x973
+              $CPDBG.$CPPDEBUG.$COUNT,9,34,0x7F6
+              $CPDBG.$MIDEBUG.$COUNT,9,52,0x4AA
+              $CPDBG.$MPDEBUG.$COUNT,9,70,0x144
+[    *SYSTEM*]    $MCR_GRP  59 updates               $MCR_GRP[1].$OTF_SPEED,45,53,0x43480000
+              $MCR_GRP[1].$OTF_ORG_SPD,45,54,0x43480000
+[    *SYSTEM*]   $RDCR_GRP  459 updates               $RDCR_GRP[1].$RMAX_TORQUE[1],62,2,0x45389204
+              $RDCR_GRP[1].$RMAX_TORQUE[3],62,4,0x45649EAF
+              $RDCR_GRP[1].$RMAX_TORQUE[4],62,5,0x43B0B512
+              $RDCR_GRP[1].$RMAX_TORQUE[5],62,6,0x42DAE85C
+              $RDCR_GRP[1].$RMAX_TORQUE[6],62,7,0x38B6BE08
+              $RDCR_GRP[1].$RMIN_TORQUE[1],62,12,0xC5502847
+              $RDCR_GRP[1].$RMIN_TORQUE[2],62,13,0xC58323B8
+              $RDCR_GRP[1].$RMIN_TORQUE[4],62,15,0xC3B104FA
+              $RDCR_GRP[1].$RMIN_TORQUE[5],62,16,0xC30B5C37
+              $RDCR_GRP[1].$RMIN_TORQUE[6],62,17,0xB8C2B442
+[    *SYSTEM*]    $MNUTOOL  129 updates               $MNUTOOL[1,2],51,22,0x350EFA35
+              $MNUTOOL[1,2],51,24,0xB50EFA35
+[    *SYSTEM*]   $DMSW_CFG  10 updates               $DMSW_CFG.$KEYIMAGE,25,0,0xC
+[    *SYSTEM*]      $CPDBG  1038 updates               $CPDBG.$MIDEBUG.$TAIL,9,53,0x4AB
+              $CPDBG.$MPDEBUG.$TAIL,9,71,0x145
+              $CPDBG.$MGDEBUG.$TAIL,9,89,0x1EE
+[    *SYSTEM*]   $DIAG_GRP  788 updates               $DIAG_GRP[1].$CUR_TCP,23,518,0x3F800000
+              $DIAG_GRP[1].$CUR_TCP,23,519,0xB480FCBF
+              $DIAG_GRP[1].$CUR_TCP,23,520,0xB2396284
+              $DIAG_GRP[1].$CUR_TCP,23,521,0xB480FCBF
+              $DIAG_GRP[1].$CUR_TCP,23,522,0xBF800000
+              $DIAG_GRP[1].$CUR_TCP,23,523,0xB29D6557
+              $DIAG_GRP[1].$CUR_TCP,23,524,0xB239627F
+              $DIAG_GRP[1].$CUR_TCP,23,525,0x32A6B687
+              $DIAG_GRP[1].$CUR_TCP,23,526,0xBF800000
+              $DIAG_GRP[1].$CUR_TCP,23,527,0xC402B5C2
+              $DIAG_GRP[1].$CUR_TCP,23,528,0x446B170B
+              $DIAG_GRP[1].$CUR_TCP,23,529,0x4389A2E8
+              $DIAG_GRP[1].$CUR_TCP,23,530,0x3F000000
+              $DIAG_GRP[1].$MOTN_STYLE,23,531,0x0
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$SPC_COUNT[1],24,74,0xFDA1CE08
+              $DMR_GRP[1].$SPC_MOVE[1],24,84,0x0
+[    *SYSTEM*] $MOR_GRP_SV  188 updates               $MOR_GRP_SV[1].$CUR_SV_ANG[1],54,2,0x400501CA
+[    *SYSTEM*]    $SCR_GRP  156 updates               $SCR_GRP[1].$DAC_AXMODE[8],66,203,0x54707F45
+              $SCR_GRP[1].$DAC_AXMODE[9],66,204,0x708C
+[    *SYSTEM*]  $CP_MORGRP  64 updates               $CP_MORGRP[1].$SEGFRACTION,12,39,0x3F19999A
+[    *SYSTEM*]        $MCR  108 updates               $MCR.$OTF_OFST,44,44,0x0
+[    *SYSTEM*]      $CPDBG  1038 updates               $CPDBG.$CPPDEBUG.$TAIL,9,35,0x7F7
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$SPC_COUNT[3],24,76,0xFF96E76E
+              $DMR_GRP[1].$SPC_MOVE[3],24,86,0x0
+[    *SYSTEM*]    $FMS_GRP  47147 updates               $FMS_GRP[1].$NT_LIFE[3],35,14,0x4C16D70C
+[    *SYSTEM*] $MOR_GRP_SV  188 updates               $MOR_GRP_SV[1].$CUR_SV_ANG[3],54,4,0x3DE9E82D
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$BCKLSH_SIGN[3],24,56,0x1
+[    *SYSTEM*]      $CPDBG  1038 updates               $CPDBG.$CPIDEBUG.$TAIL,9,17,0x974
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$BCKLSH_SIGN[1],24,54,0x1
+[    *SYSTEM*]    $MNUTOOL  129 updates               $MNUTOOL[1,2],51,18,0x0
+              $MNUTOOL[1,2],51,20,0x0
+              $MNUTOOL[1,2],51,23,0x0
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$SPC_COUNT[6],24,79,0xFEEED30F
+              $DMR_GRP[1].$SPC_MOVE[6],24,89,0x0
+[    *SYSTEM*]    $FMS_GRP  47147 updates               $FMS_GRP[1].$NT_LIFE[6],35,17,0x4435F859
+[    *SYSTEM*] $MOR_GRP_SV  188 updates               $MOR_GRP_SV[1].$CUR_SV_ANG[6],54,7,0xC00501CA
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$BCKLSH_SIGN[6],24,59,0x0
+[    *SYSTEM*]  $CP_MORGRP  64 updates               $CP_MORGRP[1].$CHNS_EMPTY,12,1,0x1
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$BCKLSH_SIGN[2],24,55,0x1
+              $DMR_GRP[1].$BCKLSH_SIGN[4],24,57,0x1
+              $DMR_GRP[1].$SPC_COUNT[2],24,75,0xFF740C3C
+              $DMR_GRP[1].$SPC_COUNT[4],24,77,0x0
+              $DMR_GRP[1].$SPC_COUNT[5],24,78,0xFEAE18AE
+              $DMR_GRP[1].$SPC_MOVE[2],24,85,0x0
+              $DMR_GRP[1].$SPC_MOVE[4],24,87,0x0
+              $DMR_GRP[1].$SPC_MOVE[5],24,88,0x0
+[    *SYSTEM*]    $FMS_GRP  47147 updates               $FMS_GRP[1].$NT_LIFE[4],35,15,0x448D53D4
+[    *SYSTEM*] $MOR_GRP_SV  188 updates               $MOR_GRP_SV[1].$CUR_SV_ANG[2],54,3,0xBEEE184C
+              $MOR_GRP_SV[1].$CUR_SV_ANG[4],54,5,0x0
+              $MOR_GRP_SV[1].$CUR_SV_ANG[5],54,6,0xBFD7AE5D
+[    *SYSTEM*]    $SCR_GRP  156 updates               $SCR_GRP[1].$DST_MIR_P,66,163,0x0
+[    *SYSTEM*]    $FMS_GRP  47147 updates               $FMS_GRP[1].$NT_LIFE[1],35,12,0x4C640C8B
+              $FMS_GRP[1].$NT_LIFE[2],35,13,0x4C27F525
+              $FMS_GRP[1].$NT_LIFE[5],35,16,0x45235D60
+[    *SYSTEM*]    $MNUTOOL  129 updates               $MNUTOOL[1,2],51,17,0x3F800000
+              $MNUTOOL[1,2],51,21,0x3F800000
+              $MNUTOOL[1,2],51,25,0x3F800000
+[    *SYSTEM*]    $DMR_GRP  411 updates               $DMR_GRP[1].$BCKLSH_SIGN[5],24,58,0x0
+[    *SYSTEM*]     $DTDIAG  4 updates               $DTDIAG.$DTREC_ON,27,12,0x1
+[    *SYSTEM*]$SMON_RECALL  4338 updates               $SMON_RECALL[5],71,130,0x66207970
+              $SMON_RECALL[9],71,268,0x313A6375
+              $SMON_RECALL[9],71,269,0x32333537
+              $SMON_RECALL[10],71,301,0x32333537
+              $SMON_RECALL[11],71,322,0x2079706F
+              $SMON_RECALL[23],71,706,0x2079706F
+              $SMON_RECALL[23],71,707,0x3A617266
+              $SMON_RECALL[36],71,1122,0x6D207970
+[    *SYSTEM*]        $MCR  108 updates               $MCR.$CLD_RELEASE,44,47,0x0
+              $MCR.$SHFT_RST_PR,44,54,0x0
+[    *SYSTEM*]  $CP_MORGRP  64 updates               $CP_MORGRP[1].$JNT_ACC[5],12,24,0x43A8FE6B
+              $CP_MORGRP[1].$JNT_JRK[3],12,32,0x4592D95C
+              $CP_MORGRP[1].$JNT_JRK[5],12,34,0x4592BE09
+[    *SYSTEM*]  $HOSTC_CFG  24 updates               $HOSTC_CFG[1].$PROTOCOL,39,6,0x4D000009
+              $HOSTC_CFG[1].$STATE,39,12,0x1
+              $HOSTC_CFG[1].$REMOTE,39,20,0x32000015
+              $HOSTC_CFG[1].$SERVER_PORT,39,113,0x0
+[    *SYSTEM*]$SMON_RECALL  4338 updates               $SMON_RECALL[40],71,1262,0x38313A63
+              $SMON_RECALL[40],71,1263,0x303037
+              $SMON_RECALL[39],71,1230,0x38313A63
+              $SMON_RECALL[39],71,1231,0x303037
+              $SMON_RECALL[36],71,1134,0x38313A63
+              $SMON_RECALL[36],71,1135,0x303037
+              $SMON_RECALL[37],71,1166,0x38313A63
+              $SMON_RECALL[37],71,1167,0x303037
+              $SMON_RECALL[38],71,1198,0x38313A63
+              $SMON_RECALL[38],71,1199,0x303037
+[    *SYSTEM*]  $CP_MORGRP  64 updates               $CP_MORGRP[1].$RSTRT_LINE,12,40,0xA
+[    *SYSTEM*]$SMON_RECALL  4338 updates               $SMON_RECALL[35],71,1102,0x38313A63
+              $SMON_RECALL[35],71,1103,0x303037
+              $SMON_RECALL[34],71,1070,0x38313A63
+              $SMON_RECALL[34],71,1071,0x303037
+              $SMON_RECALL[33],71,1038,0x38313A63
+              $SMON_RECALL[33],71,1039,0x303037
+[TPFDEF] saved 3 times with 14 entries:
+[      TPFDEF]  SETUP_DATA  14 updates               SETUP_DATA[1,1,2].$COMMENT,2,12,0x69500F1D
+              SETUP_DATA[1,1,2].$COMMENT,2,13,0x5065636E
+              SETUP_DATA[1,1,2].$COMMENT,2,14,0x65686572
+              SETUP_DATA[1,1,2].$COMMENT,2,15,0x7565736E
+              SETUP_DATA[1,1,2].$COMMENT,2,16,0x72
+              SETUP_DATA[1,1,2].$COMMENT,2,17,0x55313B24
+              SETUP_DATA[1,1,2].$COMMENT,2,18,0x55313B24
+              SETUP_DATA[1,1,4].$COMMENT,2,30,0x6950111D
+              SETUP_DATA[1,1,4].$COMMENT,2,31,0x5065636E
+              SETUP_DATA[1,1,4].$COMMENT,2,32,0x65686572
+              SETUP_DATA[1,1,4].$COMMENT,2,33,0x7565736E
+              SETUP_DATA[1,1,4].$COMMENT,2,34,0x435572
+              SETUP_DATA[1,1,4].$COMMENT,2,35,0x55313B24
+              SETUP_DATA[1,1,4].$COMMENT,2,36,0x55313B24
+
+Variables Scan List:
+     Program     Variable   Size   Shadow         VDB Data        Status
+[    *NUMREG*]     $NUMREG  5604 0xB1133F0, 0xB03A718-0xB03BCFC  OK     OK
+[    *POSREG*]     $POSREG  8808 0xB10BE14, 0xB038498-0xB03A700  OK     OK
+[    *STRREG*]     $STRREG  6804 0xB0FBC54, 0xB0DCA3C-0xB0DE4D0  OK     OK
+[    *STRREG*] $MAXSREGNUM     4 0xB0FBC90, 0xB1770A0-0xB1770A4  OK     OK
+[    *SYSTEM*]   $AAVM_GRP   828 0xB0CA308, 0xB0DC29C-0xB0DC5D8  OK     OK
+[    *SYSTEM*]     $ALM_IF   260 0xB0CA548, 0xB0F062C-0xB0F0730  OK     OK
+[    *SYSTEM*]   $AP_CUREQ  2692 0xB0CA740, 0xB037240-0xB037CC4  OK     OK
+[    *SYSTEM*]  $AXSCRDCFG   508 0xB0CAFB0, 0xB0DC088-0xB0DC284  OK     OK
+[    *SYSTEM*] $CELL_FLOOR    56 0xB0CB310, 0xB0F05DC-0xB0F0614  OK     OK
+[    *SYSTEM*]   $CELL_GRP   332 0xB0CB358, 0xB0370DC-0xB037228  OK     OK
+[    *SYSTEM*] $CELL_SETUP   860 0xB0CB3E8, 0xB0DBD14-0xB0DC070  OK     OK
+[    *SYSTEM*]     $CLMLIO    68 0xB0CB5E0, 0xB0F0580-0xB0F05C4  OK     OK
+[    *SYSTEM*]      $CPCFG   216 0xB0CB700, 0xB036FEC-0xB0370C4  OK     OK
+[    *SYSTEM*]      $CPDBG   496 0xB0CB748, 0xB0DBB0C-0xB0DBCFC  OK     OK
+[    *SYSTEM*]   $CPDBGDEF    72 0xB0CB790, 0xB0F0520-0xB0F0568  OK     OK
+[    *SYSTEM*]  $CP_MCRGRP    16 0xB0CB7D8, 0xB15404C-0xB15405C  OK     OK
+[    *SYSTEM*]  $CP_MORGRP   168 0xB0CB820, 0xB178D48-0xB178DF0  OK     OK
+[    *SYSTEM*]$CP_PARAMGRP   320 0xB0CB868, 0xB0DB9B4-0xB0DBAF4  OK     OK
+[    *SYSTEM*] $CP_RSMOFST    16 0xB0CB8B0, 0xB0F04F8-0xB0F0508  OK     OK
+[    *SYSTEM*] $CP_T1_MODE    76 0xB0CB8F8, 0xB0E49F4-0xB0E4A40  OK     OK
+[    *SYSTEM*] $CP_TESTDEF     8 0xB0CB940, 0xB1545E0-0xB1545E8  OK     OK
+[    *SYSTEM*]$CRT_KEY_TBL   260 0xB0CBAA8, 0xB036ED0-0xB036FD4  OK     OK
+[    *SYSTEM*] $CSXC_PARAM   564 0xB0CBCE8, 0xB0DB768-0xB0DB99C  OK     OK
+[    *SYSTEM*] $CUSTOMMENU  1864 0xB0CBDC0, 0xB0EFD98-0xB0F04E0  OK     OK
+[    *SYSTEM*]$DCSS_DEVICE   196 0xB0CC318, 0xB036DF4-0xB036EB8  OK     OK
+[    *SYSTEM*]    $DCSS_LS   164 0xB0CC360, 0xB0DB6AC-0xB0DB750  OK     OK
+[    *SYSTEM*] $DCSS_PARAM    16 0xB0CC3A8, 0xB0EFD70-0xB0EFD80  OK     OK
+[    *SYSTEM*]   $DIAG_GRP  2256 0xB0CC990, 0xB03650C-0xB036DDC  OK     OK
+[    *SYSTEM*]    $DMR_GRP  1572 0xB0CCB40, 0xB0DB070-0xB0DB694  OK     OK
+[    *SYSTEM*]   $DMSW_CFG    16 0xB0CCB88, 0xB0EFD48-0xB0EFD58  OK     OK
+[    *SYSTEM*]  $DOCVIEWER  1196 0xB0CCC18, 0xB036048-0xB0364F4  OK     OK
+[    *SYSTEM*]     $DTDIAG   420 0xB0CCE10, 0xB0DAEB4-0xB0DB058  OK     OK
+[    *SYSTEM*]     $DTRECP   420 0xB0CCE58, 0xB0EFB8C-0xB0EFD30  OK     OK
+[    *SYSTEM*]   $ENC_STAT 15364 0xB0CD098, 0xB03242C-0xB036030  OK     OK
+[    *SYSTEM*]$FILE_AP2BCK  2644 0xB0CD950, 0xB0DA448-0xB0DAE9C  OK     OK
+[    *SYSTEM*]$FILE_APPBCK  6604 0xB0CD998, 0xB030A48-0xB032414  OK     OK
+[    *SYSTEM*] $FILE_DGBCK  5284 0xB0CDA28, 0xB0D8F8C-0xB0DA430  OK     OK
+[    *SYSTEM*]$FILE_MDONLY  1324 0xB0CDB48, 0xB0EF648-0xB0EFB74  OK     OK
+[    *SYSTEM*]$FILE_VISBCK  1324 0xB0CDBD8, 0xB030504-0xB030A30  OK     OK
+[    *SYSTEM*]    $FMS_GRP  3360 0xB0CDCB0, 0xB0D8254-0xB0D8F74  OK     OK
+[    *SYSTEM*]  $FSAC_LIST  1284 0xB0CDE60, 0xB02FFE8-0xB0304EC  OK     OK
+[    *SYSTEM*]   $FSSB_CFG    84 0xB0CDEA8, 0xB0D81E8-0xB0D823C  OK     OK
+[    *SYSTEM*]  $GRAVC_GRP   152 0xB0CE130, 0xB02FF38-0xB02FFD0  OK     OK
+[    *SYSTEM*]  $HOSTC_CFG  3620 0xB0CE208, 0xB02F0FC-0xB02FF20  OK     OK
+[    *SYSTEM*]  $HOSTS_CFG  3620 0xB0CE2E0, 0xB02E2C0-0xB02F0E4  OK     OK
+[    *SYSTEM*]$HOST_SHARED  1604 0xB0CE400, 0xB0D7B8C-0xB0D81D0  OK     OK
+[    *SYSTEM*] $HSCD_GROUP   164 0xB0CE448, 0xB02E204-0xB02E2A8  OK     OK
+[    *SYSTEM*] $MACROTABLE 15004 0xB0CF450, 0xB02A750-0xB02E1EC  OK     OK
+[    *SYSTEM*]        $MCR   236 0xB0CF720, 0xB0D7A88-0xB0D7B74  OK     OK
+[    *SYSTEM*]    $MCR_GRP   600 0xB0CF768, 0xB02A4E0-0xB02A738  OK     OK
+[    *SYSTEM*]       $MCSP    52 0xB0CF7B0, 0xB1312E8-0xB13131C  OK     OK
+[    *SYSTEM*]   $MCSP_GRP  1732 0xB0CF7F8, 0xB029E04-0xB02A4C8  OK     OK
+[    *SYSTEM*]    $MIX_MKR  2116 0xB0CFB10, 0xB0295A8-0xB029DEC  OK     OK
+[    *SYSTEM*]   $MNUFRAME   512 0xB0CFDE0, 0xB0D7870-0xB0D7A70  OK     OK
+[    *SYSTEM*]$MNUFRAMENUM     8 0xB0CFE28, 0xB17707C-0xB177084  OK     OK
+[    *SYSTEM*]    $MNUTOOL   568 0xB0CFE70, 0xB029358-0xB029590  OK     OK
+[    *SYSTEM*] $MNUTOOLNUM     8 0xB0CFEB8, 0xB13A82C-0xB13A834  OK     OK
+[    *SYSTEM*]  $MODEM_INF  2116 0xB0D0068, 0xB028AFC-0xB029340  OK     OK
+[    *SYSTEM*] $MOR_GRP_SV    44 0xB0D01D0, 0xB16FF24-0xB16FF50  OK     OK
+[    *SYSTEM*] $OUT_SIM_DO     4 0xB0D0C80, 0xB143ABC-0xB143AC0  OK     OK
+[    *SYSTEM*] $PARAM2_GRP  2116 0xB0D0E30, 0xB0282A0-0xB028AE4  OK     OK
+[    *SYSTEM*]$PARAM_GROUP  7012 0xB0D0E78, 0xB026724-0xB028288  OK     OK
+[    *SYSTEM*] $PGINP_TYPE   724 0xB0D1340, 0xB026438-0xB02670C  OK     OK
+[    *SYSTEM*]   $PLID_GRP  1268 0xB0D16E8, 0xB025F2C-0xB026420  OK     OK
+[    *SYSTEM*] $PRGADJ_SCH  1484 0xB0D2660, 0xB025948-0xB025F14  OK     OK
+[    *SYSTEM*]     $RCMCFG   508 0xB0D2DF8, 0xB0D765C-0xB0D7858  OK     OK
+[    *SYSTEM*]   $RDCR_GRP   468 0xB0D2E88, 0xB02575C-0xB025930  OK     OK
+[    *SYSTEM*]        $SBR 58468 0xB0D3C98, 0xB0172E0-0xB025744  OK     OK
+[    *SYSTEM*]       $SBR2 25540 0xB0D3CE0, 0xB010F04-0xB0172C8  OK     OK
+[    *SYSTEM*]        $SCR  8792 0xB0D3D70, 0xB00EC94-0xB010EEC  OK     OK
+[    *SYSTEM*]    $SCR_GRP  2168 0xB0D3DB8, 0xB00E404-0xB00EC7C  OK     OK
+[    *SYSTEM*]    $SERVENT  1524 0xB0D3ED8, 0xB00DDF8-0xB00E3EC  OK     OK
+[    *SYSTEM*] $SERVICE_KL  1204 0xB0D3F20, 0xB00D92C-0xB00DDE0  OK     OK
+[    *SYSTEM*]$SERVICE_PRG  1204 0xB0D3F68, 0xB00D460-0xB00D914  OK     OK
+[    *SYSTEM*] $SMON_ALIAS  4164 0xB0D44C0, 0xB00C404-0xB00D448  OK     OK
+[    *SYSTEM*]$SMON_RECALL  5124 0xB0D4550, 0xB00AFE8-0xB00C3EC  OK     OK
+[    *SYSTEM*]        $SSR    52 0xB0D4700, 0xB104DB4-0xB104DE8  OK     OK
+[    *SYSTEM*]   $STOP_PTN     4 0xB0D48B0, 0xB1475B4-0xB1475B8  OK     OK
+[    *SYSTEM*]  $SVPRM_UPD  2020 0xB0D4BC8, 0xB00A7EC-0xB00AFD0  OK     OK
+[    *SYSTEM*]   $TORQCTRL   456 0xB0D5678, 0xB00A60C-0xB00A7D4  OK     OK
+[    *SYSTEM*]$TPGL_CONFIG 18152 0xB0D5750, 0xB005F0C-0xB00A5F4  OK     OK
+[    *SYSTEM*]  $TRACE_CFG    24 0xB0D5C60, 0xB176BEC-0xB176C04  OK     OK
+[    *SYSTEM*] $TRACE_CHNL   184 0xB0D5CA8, 0xB005E3C-0xB005EF4  OK     OK
+[    *SYSTEM*] $TRACE_ITEM  3684 0xB0D5CF0, 0xB004FC0-0xB005E24  OK     OK
+[    *SYSTEM*]      $TSCFG   164 0xB0D5D38, 0xB004F04-0xB004FA8  OK     OK
+[    *SYSTEM*]    $TSR_GRP   732 0xB0D5D80, 0xB004C10-0xB004EEC  OK     OK
+[    *SYSTEM*]      $TSSCB   196 0xB0D5DC8, 0xB004B34-0xB004BF8  OK     OK
+[    *SYSTEM*]  $TX_SCREEN  1564 0xB0D5E58, 0xB004500-0xB004B1C  OK     OK
+[    *SYSTEM*]      $UECFG   276 0xB0D5FC0, 0xB0043D4-0xB0044E8  OK     OK
+[    *SYSTEM*]      $UEGRP    52 0xB0D6008, 0xB0D7610-0xB0D7644  OK     OK
+[    *SYSTEM*]  $UI_CONFIG  2512 0xB0D6050, 0xB0039EC-0xB0043BC  OK     OK
+[    *SYSTEM*]  $UI_CUSTOM  5584 0xB0D60E0, 0xB002404-0xB0039D4  OK     OK
+[    *SYSTEM*] $UI_TOPMENU 16244 0xB0D63F8, 0xAFFE478-0xB0023EC  OK     OK
+[    *SYSTEM*]$UI_USERVIEW  4084 0xB0D6488, 0xAFFD46C-0xAFFE460  OK     OK
+[    *SYSTEM*]   $VCMR_GRP   744 0xB0D68C0, 0xAFFD16C-0xAFFD454  OK     OK
+[    *SYSTEM*] $VISION_CFG   340 0xB0D6B00, 0xAFFD000-0xAFFD154  OK     OK
+[    *SYSTEM*] $VISION_GRP   324 0xB0D6B48, 0xAFFCEA4-0xAFFCFE8  OK     OK
+[    *SYSTEM*]  $VLEXE_CFG    20 0xB0D6B90, 0xB177270-0xB177284  OK     OK
+[    *SYSTEM*]         $VR  2284 0xB0D6C20, 0xAFFC5A0-0xAFFCE8C  OK     OK
+[    *SYSTEM*] $VSHIFTMENU   604 0xB0D6C68, 0xAFFC32C-0xAFFC588  OK     OK
+[    *SYSTEM*]   $VSMO_CFG     8 0xB0D6D40, 0xB1762A4-0xB1762AC  OK     OK
+[    *SYSTEM*]   $ZABC_GRP    48 0xB0D7250, 0xB050ACC-0xB050AFC  OK     OK
+[     ATSHELL] SHELL_CHECK   708 0xB145590, 0xAFF995C-0xAFF9C20  OK     OK
+[    ATSOFTPA] DESCRPT_STR  1124 0xB143610, 0xAFF9404-0xAFF9868  OK     OK
+[    ATSOFTPA]    TYPE_STR   244 0xB14364C, 0xAFF92F8-0xAFF93EC  OK     OK
+[    ATSOFTPA] PORT_SELECT   164 0xB143688, 0xAFF923C-0xAFF92E0  OK     OK
+[    ATSOFTPA]   PORT_TYPE   164 0xB1436C4, 0xAFF9180-0xAFF9224  OK     OK
+[    ATSOFTPA]    IO_INDEX   164 0xB143700, 0xAFF90C4-0xAFF9168  OK     OK
+[    ATSOFTPA]      IO_SIM   164 0xB14373C, 0xAFF9008-0xAFF90AC  OK     OK
+[    ATSOFTPA]    IO_STATE   164 0xB143778, 0xAFF8F4C-0xAFF8FF0  OK     OK
+[    ATSOFTPA]    IO_VALUE   164 0xB1437B4, 0xAFF8E90-0xAFF8F34  OK     OK
+[    ATSOFTPA]     IO_PORT   724 0xB1437F0, 0xAFF8BA4-0xAFF8E78  OK     OK
+[    ATSOFTPA] INIT_ARRAYS     4 0xB14382C, 0xB153A94-0xB153A98  OK     OK
+[    ATSOFTPA]NO_FORM_LINE     4 0xB143868, 0xB170464-0xB170468  OK     OK
+[      TPFDEF]   JOGFRAMES  2276 0xB04C100, 0xAFF5A44-0xAFF6328  OK     OK
+[      TPFDEF]  JOGFRAMNUM    12 0xB04C13C, 0xB153A70-0xB153A7C  OK     OK
+[      TPFDEF]  SETUP_DATA 52836 0xB04C358, 0xAFE3CA8-0xAFF0B0C  OK     OK
+[      TPFDEF]  CELL_SETUP   292 0xB04C394, 0xAFE3B6C-0xAFE3C90  OK     OK
+[      TPFDEF] FLOOR_SETUP    36 0xB04C3D0, 0xB12F860-0xB12F884  OK     OK
+[     TPGLMCP] APP_CU1_ENB     4 0xB03DCEC, 0xB154318-0xB15431C  OK     OK
+[     TPGLMCP]APP_PICK_ENB     4 0xB03DD28, 0xB10F484-0xB10F488  OK     OK
+[     TPGLMCP]  APP_TP_ENB     4 0xB03DD64, 0xB105EDC-0xB105EE0  OK     OK
+[     TPGLMCP]       DEBUG     4 0xB03DDDC, 0xB171158-0xB17115C  OK     OK
+[     TPGLMCP]      DEBUG2     4 0xB03DE18, 0xB14758C-0xB147590  OK     OK
+[     TPGLMCP]      DEBUG3     4 0xB03DE54, 0xB0FF450-0xB0FF454  OK     OK
+[     TPGLMCP]  LOOP_DELAY     4 0xB03E070, 0xB18E8BC-0xB18E8C0  OK     OK
+[     TPGLMCP]    PIPESIZE     4 0xB03E124, 0xB050AB0-0xB050AB4  OK     OK
+[     TPGLMCP]         TAB     8 0xB03E214, 0xB0FCCA4-0xB0FCCAC  OK     OK
