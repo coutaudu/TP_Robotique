@@ -1,1 +1,2 @@
 Robot_MBUC_2/Robot_1/fromimg.bin filter=lfs diff=lfs merge=lfs -text
+Robot_MBUC_2/Robot_2/fromimg.bin filter=lfs diff=lfs merge=lfs -text

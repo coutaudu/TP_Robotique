@@ -2,8 +2,6 @@
 *~
 Robot_MBUC_2/MultiSync.bin
 Robot_MBUC_2/PowerData/CLen.DT
-Robot_MBUC_2/Robot_1/logfile.txt
-Robot_MBUC_2/Robot_1/services.txt
 Robot_MBUC_2/layout/Workcell 1/Workcell 1.1
 Robot_MBUC_2/layout/Workcell 1/Workcell 1.layout
 Robot_MBUC_2/layout/Workcell2/Workcell2.1
@@ -11,12 +9,23 @@ Robot_MBUC_2/layout/Workcell2/Workcell2.layout
 Robot_MBUC_2/layout/lay_file.1
 Robot_MBUC_2/layout/lay_file.dat
 Robot_MBUC_2/PQE89C.tmp
-Robot_MBUC_2/Robot_1/~svtc.tmp
 Robot_MBUC_2/Robot_MBUC_2.frx
 Robot_MBUC_2/TCPTrace/
-Robot_MBUC_2/Robot_1/temp/
 Robot_MBUC_2/SavePoints/
 Robot_MBUC_2/PGTrace/
+
+Robot_MBUC_2/Robot_1/logfile.txt
+Robot_MBUC_2/Robot_1/services.txt
+Robot_MBUC_2/Robot_1/~svtc.tmp
+Robot_MBUC_2/Robot_1/temp/
+Robot_MBUC_2/Robot_1/~svtc.tmp
+
+Robot_MBUC_2/Robot_2/logfile.txt
+Robot_MBUC_2/Robot_2/services.txt
+Robot_MBUC_2/Robot_2/~svtc.tmp
+Robot_MBUC_2/Robot_2/temp/
+Robot_MBUC_2/Robot_2/~svtc.tmp
+
 \#*\#
 *.tex
 .\#*
