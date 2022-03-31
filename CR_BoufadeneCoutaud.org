@@ -98,3 +98,26 @@ TODO figure 14.
 + Le bloc /if then else/ est implémenté via des /IF ... JMP LBL[...]/, càd des /goto/ en programmation impérative.
 + La condition est câblée sur le bit DI[5] que nous contrôlons manuellement vie l'interface /IO/Panel/  
 + La figure 15 montre notre programme de manutention conditionnelle en cours d'éxécution.
+
+* Programmation d'un second robot et coordination avec le premier
++ Nous avons ajouté un robot et adapté l'environnement afin de réaliser une tache supplémentaire:
+  + Lorsque une boite est déposée sur la /Table1/, le Robot2 ramasse la boite et la dépose sur un autre plateau.
++ Nous avons paramétré et testé la capcité du second robot à effectivement ramasser et déposer la boite dans le nouvel environnement.
++ Afin de prévenir d'un éventuel risque de collision des robots nous avons synchronisé leurs actions respectives via un simple mécanisme d'exclusion mutuelle:
+  + *ROBOT2:*
+    + Robot2 est en position de repos et attend 2 conditions avant de déclencher ses mouvements vers le PickUp sur Table1:
+      + La présence de la boite sur la table (sur DI[1])
+      + Le signal que Robot1 est en position de sécurité (sur Robot2.DI[2] venant de Robot1.DO[2])
+    + Lorsque Robot 2 passe ce double /Lock/, il pose un /Lock/ (sur Robot2.DO[1] partant sur Robot1.DI[6]).
+    + Robot2 enclenche le pickup sur /Table1/
+    + Robot2 libère son /Lock/ en sortant de la zone de Table1 (cad juste après sont mouvement déloignement)       
+  + *ROBOT1:*              
+    + Après un dépot sur la /Table1/, une opération est ajoutée:
+      + /GoToSafePlace/ qui consiste a:
+	+ se positionner éloigné de /Table1/
+	+ Libérer le /Lock/ en passant Robot1.DO[2]->Robot2.DI[2] à Vrai.
+	+ Attendre que Robot2 libère son /Lock/ en passant Robot2.DO[1]->Robot1.DI[6] à Vrai.
+	+ Reposer un /Lock/ en passant Robot1.DO[2]->Robot2.DI[2] à Faux.
+	
++ La figure 16 montre notre système de deux robots coordonnés en cours de simulation.
+TODO Figure 16
