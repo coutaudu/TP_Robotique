@@ -80,5 +80,21 @@ TODO figure 12.
 + Nous ajoutons une zone de dépot (table1) dans la zone de travail de notre outil pince avec préhenseur.
 + Nous positionnons l'objet relativement à table1.
 + Puis nous vérifions que la position de l'objet sur la table est atteignable par le robot équipé de notre pince, voir figure 13.
-TODO figure 13.    
-  
+TODO figure 13.
+
+** Implémentation des sous-programmes de picking
++ A partir de la base de programme de picking réalisé précédemment, nous avons implémenté 3 sous-programmes:
+  + /Plateau1toPlateau2/
+  + /Plateau1toTable1/
+  + /ReposToSaisiePlateau1/  
+  Les deux programmes réalisent 1 cycle de PickUp/Drop pour respectivement chacune des zone de dépot.
+  Ils partent de la même position: la position de saisie de la boite sur le plateau1 et reviennent dans la même position de repos.
+  Le programme /ReposToSaisiePlateau1/ implémente la partie commune, c'est à dire le mouvement de la position de repos jusqu'à la saisie de la boite sur le plateau1.
+  + La figure 14 montre le sous-programme /Plateau1toTable1/ en cours d'éxécution.
+TODO figure 14.
+
+** Implémentation du programme de manutention conditionelle
++ Avec nos sous-programmes fonctionnels, il nous suffit maintenant d'agencer l'appel des differentes fonctions dans une bloc /if then else/ et de câbler le test de la condition sur un bit du robot.
++ Le bloc /if then else/ est implémenté via des /IF ... JMP LBL[...]/, càd des /goto/ en programmation impérative.
++ La condition est câblée sur le bit DI[5] que nous contrôlons manuellement vie l'interface /IO/Panel/  
++ La figure 15 montre notre programme de manutention conditionnelle en cours d'éxécution.
