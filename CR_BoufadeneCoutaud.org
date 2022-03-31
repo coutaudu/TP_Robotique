@@ -9,13 +9,30 @@
 + Nous avons mis en place une scène basique pour un premier scénario de simulation d'un robot.
 TODO Figure 1.
 + Le robot placé au centre est équipé d'une pince non-commandable.
-+ Le robot est entouré par 2 tapis-roulants qui seront les zones de prise et de dépose des objets.
++ Le robot est entouré par 2 plateaux qui seront les zones de prise et de dépose des objets.
 + Nous avons positionné le repère UTool de la pince installé sur le robot en extrémité de ces pinces.
 + Les zones de dépot sont bien dans la zone de travail du robot équipé de cette pince et vis à vis du point de repère Utool de cette pince.
 TODO figure 2.           
-+ Nous avons positionné 2 boites sur les tapis et avons paramétré leu orientation de manière à ce que le robot puisse se positionner pour les attraper par le haut.
++ Nous avons positionné 2 boites sur les plateaux et avons paramétré leur orientation de manière à ce que le robot puisse se positionner pour les attraper par le haut.
 TODO figure 3: le robot en position d'interaction avec la boite sur le plateau 1
 TODO figure 4: le robot en position d'interaction avec la boite sur le plateau 2
 
 ** Programme et simulation d'un programme de picking simple
++ Nous avons implémenté un programme /Manutention/ sur ce robot qui réalise une tâche de picking simple, càd le robot va prendre la boite sur le /plateau1/ et aller la déposer sur le /plateau2/.
++ Pour les mouvements principaux ("longue distance") nous utilisons des mouvement de type /[J]/ qui laissent libre choix au robot de ses mouvements afin de passer d'une position à la suivante car cela est plus rapide pour le robot.
++ Pour les mouvements en phase d'approche, càd le dernier mouvement de descente pour saisir la boite, nous utilisons des mouvements de type /[L]/ qui forcent le robot à réaliser des mouvement rectilignes.
++ La figure 5 montre le déroulé et l'éxécution de notre programme /Manutention/.
+TODO figure5: Déroulé et éxécution du programme /Manutention/.
 
+* Ajout d'un effecteur
+** Mise en place d'un outil de préhension
++ Nous avons paramétré un nouvel outil sur l'effecteur du robot: une pince commandable.
+  La mise en place à consisté à :
+  + "constituer" la pince à partir de 3 objets CAD,
+  + mettre à l'échelle pour être coérent avec le reste de notre déployement, cad la taille des boites,
+  + parametrer le repère Utool de la nouvelle pince pour que cela corresponde à la nouvelle pince.
++ La figure 6 montre la nouvelle pince commandable installée.
+TODO figure 6: Nouvelle pince /Servo_Hand/ installée sur le préhenseur du robot.
++ Nous avons testé la non-régression en applicant le premier programme /Manutention/ réalisé précedemment avec la nouvelle pince.
+
+** Programmation de la commande du préhenseur  
